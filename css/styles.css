@@ -15,6 +15,7 @@ body {
 	background-color: rgba(0,0,0,0.8) ;
 	border-radius: 10px;
 	padding: 15px;
+	margin-bottom: 20px;
 }
 
 .title {
@@ -30,7 +31,7 @@ body {
 	padding: 0 40px 0 40px;
 	margin-bottom: 10px;
 }
-#startGame h3 {
+.buttonStyles h3 {
 	padding: 0 40px 0 40px;
 	font-weight: 700;
 	color: rgb(30,30,30);
@@ -42,6 +43,12 @@ body {
 	color: white;
 	text-align: center;
 	padding-bottom: 10px;
+}
+#averageBox {
+	display: none;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px
 }
 #box {
 	width: 200px;

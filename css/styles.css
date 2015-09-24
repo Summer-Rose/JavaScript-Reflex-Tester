@@ -1,6 +1,7 @@
 body {
 	background-image: url('../img/header.jpg');
-	position: cover;
+	position: relative;
+	background-size: cover;
 }
 
 .header {
@@ -20,9 +21,8 @@ body {
 #box {
 	width: 200px;
 	height: 200px;
-	background-color: red;
 	display: none;
-	position: relative;
+	position: absolute;
 }
 
 #playArea {
@@ -31,4 +31,5 @@ body {
 	background-color: white;
 	margin: -90px auto 0 auto;
 	border-radius: 10px;
+	position: relative;
 }

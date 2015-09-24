@@ -1,12 +1,12 @@
-# Project Name
+# Reflex Tester
 
-##### _Project Purpose, date 2015_
+##### _JavaScript Project, date 2015_
 
-#### By **Names**
+#### By **Summer Brochtrup**
 
 ## Description
 
-Description goes here
+This JavaScript application tracks how long it takes a user to click on a randomly positioned shape. 
 
 ## Setup
 
@@ -18,12 +18,13 @@ Description goes here
 
 * JavaScript
 * jQuery
-* Mocha
-* Chai
+* HTML
+* CSS
+* Bootstrap
 
 ### Legal
 
-Copyright (c) 2015 **NAMES**
+Copyright (c) 2015 **Summer Brochtrup**
 
 This software is licensed under the MIT license.
 

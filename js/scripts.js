@@ -1,26 +1,28 @@
-$(document).ready(function() {
-	function getRandomColor() {
-		var characters = "0123456789ABCDEF".split("");
-		var hexString = "#";
-		for (var i = 0; i < 6; i++) {
-			hexString += characters[Math.round(Math.random() * 15)];
-		}
-		return hexString;
+function getRandomColor() {
+	var characters = "0123456789ABCDEF".split("");
+	var hexString = "#";
+	for (var i = 0; i < 6; i++) {
+		hexString += characters[Math.round(Math.random() * 15)];
 	}
-
-	function getShape() {
-		var randomNumber = Math.round(Math.random() * 3);
-		if (randomNumber == 2) {
-			return "100%";
-		} else {
-			return "0";
-		}
+	return hexString;
+}
+function getShape() {
+	var randomNumber = Math.round(Math.random() * 3);
+	if (randomNumber == 2) {
+		return "100%";
+	} else {
+		return "0";
 	}
+}
 
+function playGame() {
+	document.getElementById("start").style.display="none";
+	document.getElementById("results").style.display="block";
 	var clickedTime;
 	var newBoxTime;
 	var reactionTime;
 	Date.now();
+
 	function newBox() {
 		var time = Math.random() * 5000;
 		setTimeout(function() {
@@ -43,5 +45,4 @@ $(document).ready(function() {
 		newBox();
 	};
 	newBox();
-
-});
+}

@@ -17,7 +17,10 @@ function getShape() {
 
 function playGame() {
 	document.getElementById("start").style.display="none";
+	document.getElementById("averageBox").style.display="none";
 	document.getElementById("results").style.display="block";
+	var clickTimes = [];
+	var average;
 	var clickedTime;
 	var newBoxTime;
 	var reactionTime;
@@ -27,7 +30,7 @@ function playGame() {
 		var time = Math.random() * 5000;
 		setTimeout(function() {
 			var top = Math.random()*200;
-			var left = Math.random() * 80;
+			var left = Math.random() * 78;
 			document.getElementById("box").style.top=top+"px";
 			document.getElementById("box").style.left=left+"%";
 			document.getElementById("box").style.backgroundColor=getRandomColor();
@@ -40,9 +43,23 @@ function playGame() {
 	document.getElementById("box").onclick=function() {
 		clickedTime = Date.now();
 		reactionTime = (clickedTime - newBoxTime)/1000;
+		clickTimes.push(reactionTime);
+		console.log(clickTimes);
 		document.getElementById("reactionTime").innerHTML=reactionTime;
 		this.style.display="none";
 		newBox();
 	};
-	newBox();
+
+	document.getElementById("getAverage").onclick=function() {
+		document.getElementById("box").style.display="none";
+		document.getElementById("averageBox").style.display="block";
+		document.getElementById("results").style.display="none";
+		average = 0;
+		for (var i = 0; i < clickTimes.length; i++) {
+			average+=clickTimes[i];
+		}
+		average = average/clickTimes.length;
+		document.getElementById("average").innerHTML=average;
+	}
+ 	newBox();
 }

@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	function getRandomColor() {
+		var characters = "0123456789ABCDEF".split("");
+		var hexString = "#";
+		for (var i = 0; i < 6; i++) {
+			hexString += characters[Math.round(Math.random() * 15)];
+		}
+		return hexString;
+	}
+
 	var clickedTime;
 	var newBoxTime;
 	var reactionTime;

@@ -24,10 +24,10 @@ $(document).ready(function() {
 	function newBox() {
 		var time = Math.random() * 5000;
 		setTimeout(function() {
-			var top = Math.random()*300;
-			var left = Math.random() * 300;
+			var top = Math.random()*200;
+			var left = Math.random() * 80;
 			document.getElementById("box").style.top=top+"px";
-			document.getElementById("box").style.left=left+"px";
+			document.getElementById("box").style.left=left+"%";
 			document.getElementById("box").style.backgroundColor=getRandomColor();
 			document.getElementById("box").style.borderRadius=getShape();
 			document.getElementById("box").style.display="block";

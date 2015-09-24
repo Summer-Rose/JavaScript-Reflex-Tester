@@ -8,6 +8,15 @@ $(document).ready(function() {
 		return hexString;
 	}
 
+	function getShape() {
+		var randomNumber = Math.round(Math.random() * 3);
+		if (randomNumber == 2) {
+			return "100%";
+		} else {
+			return "0";
+		}
+	}
+
 	var clickedTime;
 	var newBoxTime;
 	var reactionTime;
@@ -15,6 +24,8 @@ $(document).ready(function() {
 	function newBox() {
 		var time = Math.random() * 5000;
 		setTimeout(function() {
+			document.getElementById("box").style.backgroundColor=getRandomColor();
+			document.getElementById("box").style.borderRadius=getShape();
 			document.getElementById("box").style.display="block";
 			newBoxTime = Date.now();
 		}, time);

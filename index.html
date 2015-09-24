@@ -26,10 +26,15 @@
 			  		<div id="menuArea">
 			  			<div id="start">
 				  			<h4>Ready to test your reaction time? Click start below and see how fast you can click the boxes and shapes.</h4>
-				  			<button id="startGame" class="btn btn-info" onclick="playGame()"><h3>Start</h3></button>
+				  			<button id="startGame" class="buttonStyles btn btn-info" onclick="playGame()"><h3>Start</h3></button>
 				  		</div>
 				  		<div id="results">
-			  				<h3 id="time">Your reaction time: <span id="reactionTime"></span> seconds</h3>
+			  				<h3 id="time">Your reaction time: <span id="reactionTime"></span></h3>
+			  				<button class="buttonStyles btn btn-info" id="getAverage"><h3>Calculate Average</h3></button>
+			  			</div>
+			  			<div id="averageBox">
+			  				<h3>Your average reaction time: <span id="average"></span> seconds</h3>
+			  				<button class="buttonStyles btn btn-info" onclick="playGame()"><h3>Play Again</h3></button>
 			  			</div>
 			  		</div>
 		  			<div id="playArea"> 

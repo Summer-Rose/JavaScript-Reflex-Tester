@@ -1,7 +1,34 @@
+body {
+	background-image: url('../img/header.jpg');
+	position: cover;
+}
+
+.header {
+	height: 200px;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.title {
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 10px;
+	color: cyan;
+	text-align: center;
+	font-size: 6em;
+}
+
 #box {
 	width: 200px;
 	height: 200px;
 	background-color: red;
 	display: none;
 	position: relative;
+}
+
+#playArea {
+	width: 80%;
+	height: 400px;
+	background-color: white;
+	margin: -90px auto 0 auto;
+	border-radius: 10px;
 }

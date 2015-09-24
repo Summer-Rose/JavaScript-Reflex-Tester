@@ -3,6 +3,7 @@
   <head>
   	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,13 +11,35 @@
   </head>
   <body>
   	<div class="container">
-	  	<div class="header">
-	  		<h1 class="title">Reflex Tester</h1>
+
+  		<div class="row">
+  			<div class="col-sm-1 col-md-1 col-lg-1"></div>
+		  		<div class="headerArea col-sm-10 col-md-10 col-lg-10">
+		  			<h1 class="title">Reflex Tester</h1>
+		  		</div>
+	  		<div class="col-sm-1 col-md-1 col-lg-1"></div>
 	  	</div>
-	  	<p>Your reaction time: <span id="reactionTime"></span></p>
-	  	<div id="playArea"> 
-	  		<div id="box"></div>
-	  	</div>
+
+	  	<div class="row">
+		  	<div class="col-sm-1 col-md-1 col-lg-1"></div>
+		  		<div class="bodyArea col-sm-10 col-md-10 col-lg-10">
+			  		<div id="menuArea">
+			  			<div id="start">
+				  			<h4>Ready to test your reaction time? Click start below and see how fast you can click the boxes and shapes.</h4>
+				  			<button id="startGame" class="btn btn-info" onclick="playGame()"><h3>Start</h3></button>
+				  		</div>
+				  		<div id="results">
+			  				<h3 id="time">Your reaction time: <span id="reactionTime"></span> seconds</h3>
+			  			</div>
+			  		</div>
+		  			<div id="playArea"> 
+		  				<div id="box"></div>
+		  			</div>
+		  		</div>
+	  		<div class="col-sm-1 col-md-1 col-lg-1"></div>
+		</div>
+
 	</div>
   </body>
 </html>
+

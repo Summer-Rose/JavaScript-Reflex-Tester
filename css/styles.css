@@ -1,23 +1,48 @@
 body {
 	background-image: url('../img/header.jpg');
-	position: relative;
 	background-size: cover;
+	font-family: 'Syncopate', sans-serif;
 }
 
-.header {
-	height: 200px;
-	margin: 0 auto;
-	width: 80%;
+.headerArea {
+	background-color: rgba(29,210,29,0.9);
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.bodyArea {
+	background-color: rgba(0,0,0,0.8) ;
+	border-radius: 10px;
+	padding: 15px;
 }
 
 .title {
-	background-color: rgba(0,0,0,0.8);
-	border-radius: 10px;
-	color: cyan;
-	text-align: center;
-	font-size: 6em;
+	color: rgb(30,30,30);
+	font-size: 5em;
+	font-weight: 700;
+	padding: 10px 0 10px 0;
 }
 
+#start {
+	text-align: center;
+	color: white;
+	padding: 0 40px 0 40px;
+	margin-bottom: 10px;
+}
+#startGame h3 {
+	padding: 0 40px 0 40px;
+	font-weight: 700;
+	color: rgb(30,30,30);
+	font-size: 2em;
+}
+
+#results {
+	display: none;
+	color: white;
+	text-align: center;
+	padding-bottom: 10px;
+}
 #box {
 	width: 200px;
 	height: 200px;
@@ -26,10 +51,8 @@ body {
 }
 
 #playArea {
-	width: 80%;
 	height: 400px;
 	background-color: white;
-	margin: -90px auto 0 auto;
 	border-radius: 10px;
 	position: relative;
 }
